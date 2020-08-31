@@ -33,8 +33,8 @@ public class SettingsPage extends BasePage {
         return this;
     }
 
-    @Step("Approve turning off Equity Alert {0}")
-    public void approveTurnOff(boolean approve) {
+    @Step("Approve switching off Equity Alert {0}")
+    public void approveSwitchOff(boolean approve) {
         if (approve) {
             getDriver().switchTo().alert().accept();
         } else {

@@ -36,10 +36,10 @@ Common assumptions:
 
 Scenarios:
 <ul>
-<li>Verify default toggles state and initiate Equity Alert turning off but cancel it in alert so state should remain enabled</li>
-<li>Verify that both toggles could be turned off and it's state will remain after Settings reopening</li>
-<li>Verify that each toggle could be change separately and it will not affect another one</li>
+<li>Verify default toggles state and initiate the first toggle switch off but cancel it in alert so state should remain enabled</li>
+<li>Verify that both toggles could be switch off and it's state will remain after Settings reopening</li>
+<li>Verify that each toggle could be switched separately and it will not affect another one</li>
 </ul>
 
-Given scenarios are a smoke suite for toggles switching verification.
+These scenarios represent a smoke suite for toggles switching verification.<br>
 It covers possible switch states.

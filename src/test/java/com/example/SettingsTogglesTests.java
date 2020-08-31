@@ -18,7 +18,7 @@ public class SettingsTogglesTests extends BaseTest {
         checkToggleState(settingsPage, SettingsPage.Toggle.NEWS_FEED_UPDATE, true);
 
         //Try to disable Equity Alert but cancel in popup
-        settingsPage.switchToggle(SettingsPage.Toggle.EQUITY_ALERT).approveTurnOff(false);
+        settingsPage.switchToggle(SettingsPage.Toggle.EQUITY_ALERT).approveSwitchOff(false);
         checkToggleState(settingsPage, SettingsPage.Toggle.EQUITY_ALERT, true);
 
         //Reopen Settings Page and check that toggles state is not changed
@@ -32,7 +32,7 @@ public class SettingsTogglesTests extends BaseTest {
         SettingsPage settingsPage = openSettingsPage(app);
 
         //Disable Equity Alert and News Feed Update
-        settingsPage.switchToggle(SettingsPage.Toggle.EQUITY_ALERT).approveTurnOff(true);
+        settingsPage.switchToggle(SettingsPage.Toggle.EQUITY_ALERT).approveSwitchOff(true);
         settingsPage.switchToggle(SettingsPage.Toggle.NEWS_FEED_UPDATE);
         checkToggleState(settingsPage, SettingsPage.Toggle.NEWS_FEED_UPDATE, false);
         checkToggleState(settingsPage, SettingsPage.Toggle.EQUITY_ALERT, false);
@@ -58,7 +58,7 @@ public class SettingsTogglesTests extends BaseTest {
         checkToggleState(settingsPage, SettingsPage.Toggle.EQUITY_ALERT, true);
 
         //Disable Equity Alert and enable News Feed Update
-        settingsPage.switchToggle(SettingsPage.Toggle.EQUITY_ALERT).approveTurnOff(true);
+        settingsPage.switchToggle(SettingsPage.Toggle.EQUITY_ALERT).approveSwitchOff(true);
         settingsPage.switchToggle(SettingsPage.Toggle.NEWS_FEED_UPDATE);
         checkToggleState(settingsPage, SettingsPage.Toggle.NEWS_FEED_UPDATE, true);
         checkToggleState(settingsPage, SettingsPage.Toggle.EQUITY_ALERT, false);
